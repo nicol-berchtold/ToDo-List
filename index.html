@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="../dist/main.js"></script>
+</head>
+
+<body>
+    <template id="toDo-input">
+          <button type="submit">Add Project</button>
+    </template>
+    <template id="create-ToDo">
+          <form>
+            <div class="form-control">
+                <label for="title">Title</label>
+                <input type="text" id="title">
+            </div>
+            <div class="form-control">
+                <label for="Date">Date</label>
+                <input type="date" id="date">
+                <select name="priority">
+                    <option value="p1">height</option>
+                    <option value="p2">medium</option>
+                    <option value="p3">low</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="description">Description</label>
+                <textarea type="text" id="description"></textarea>
+            </div>
+            <button type="submit">Edit</button>
+            <button type="submit">Submit</button>
+        </form>
+    </template>
+    
+</body>
+
+</html>
